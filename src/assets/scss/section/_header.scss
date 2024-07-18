@@ -1,5 +1,10 @@
 .header__logo {
     border-bottom: 1px solid var(--black100);
+
+    @media (max-width:800px){
+        border-bottom: 0;
+    }
+
     a{
         display: flex;
         padding: 10px;
@@ -31,13 +36,14 @@
 
         li{
             margin-bottom: 5px;
-            a{
-                position: relative;
+
+            a{               
                 font-size: 1rem;
                 display: block;
                 padding: 0.9rem 2rem 0.9rem 3.125rem ;
                 margin: 0 0.625rem;
                 border-radius: 40px;
+                position: relative;
                 line-height: 1;
                 color:var(--white200);
                 transition: all 0.3s;
@@ -103,7 +109,11 @@
     text-align: center;
     padding: 15px 0 10px;
     background-color: var(--blackAlpha100);
-    // backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    @media (max-width:800px){
+        display: none;
+    }
     
     li {
         display: inline-block;

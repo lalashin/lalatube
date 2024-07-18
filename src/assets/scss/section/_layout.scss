@@ -17,10 +17,31 @@
 #footer {
     text-align: center;
     background-color: var(--black200);
+    border-top: 1px solid var(--black100);
     padding: 20px ;
     margin-left: 260px;
     width: calc(100% - 260px);
     color: var(--black400);
     font-size: 0.8rem;
-    border-top: 1px solid var(--black100);
+    
+}
+
+@media (max-width:800px){
+    #header {
+        left:-260px;
+
+        h1{
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    #main {
+        padding-left: 0;
+    }
+    #footer {
+        width: 100%;
+        margin-left: 0;
+    }
 }
