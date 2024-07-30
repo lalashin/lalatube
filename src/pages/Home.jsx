@@ -4,6 +4,7 @@ import Today from '../components/contents/Today'
 import Developer from '../components/contents/Developer'
 import Webd from '../components/contents/Webd'
 import Website from '../components/contents/Website'
+import Gasp from '../components/contents/Gsap'
 import Portfolio from '../components/contents/Portfolio'
 import Youtube from '../components/contents/Youtube'
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Developer /> 
       <Webd />
       <Website />
+      <Gasp />
       <Portfolio />
       <Youtube />
     </Main>
